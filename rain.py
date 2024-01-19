@@ -50,9 +50,8 @@ nSampels = 2048 #Should be a power of 2
 ## Init
 print("Starting Rain v{}".format(version))
 print("Block Size = {}".format(nSampels))
-print("")
 
-print("start audio from main")
+print("\nstart audio from main")
 audioClass = audioIn.audioIn_cl(blockSize=nSampels, sRate=sRate_Hz, fakeACCouple=True)
 #print("Sample rate = {}Hz, Sample Len = {}ms\n".format(sRate_Hz, audioClass.blockLen_ms))
 audioClass.startAudio()
